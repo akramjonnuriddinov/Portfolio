@@ -1,4 +1,18 @@
+:root {
+    --text-color: #222;
+    --bg-color: #fff;
+    --accent-color: #e05454;
+    --text-color--light: rgb(216, 203, 203);
+}
 
+.dark-mode {
+    --text-color: #fff;
+    --bg-color: #363c48;
+    --accent-color: #ffa7c4;
+    transition: 
+        color 0.4s ease,
+        background-color 0.4s ease;
+}
 
 /* GLOBAL */
 html {
@@ -15,11 +29,11 @@ body {
     display: flex;
     flex-direction: column;
     height: 100%;
-    background-color: #fff;
+    background-color: var(--bg-color);
     font-size: 16px;
     line-height: 1.5;
     font-family: "Arial", sans-serif;
-    color: #222;
+    color: var(--text-color);
     margin: 0;
     padding: 0;
 }
@@ -32,9 +46,9 @@ img {
 /* CONTAINER */
 .container {
     width: 100%;
-    max-width: 1200px;
-    padding-left: 50px;
-    padding-right: 50px;
+    max-width: 950px;
+    padding-left: 25px;
+    padding-right: 25px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -42,4 +56,204 @@ img {
 /* MAIN-CONTENT */
 .main-content {
     flex-grow: 1;
+}
+
+.site-header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.site-logo {
+    text-decoration: none;
+    color: var(--text-color);
+    font-weight: 700;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.dark-mode-btn {
+    color: var(--text-color);
+    background-color: transparent;
+    display: inline-block;
+    border: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.about-me {
+    display: flex;
+    align-items: center;
+}
+
+.about-me__link {
+    text-decoration: none;
+    color: var(--accent-color);
+    cursor: pointer;
+    transition: text-decoration 0.4s ease;
+}
+
+.about-me__link:hover {
+    text-decoration: underline;
+}
+
+.profile-img-wrapper {
+    margin-right: 24px;
+}
+
+.profile-img {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.about-me__title {
+    display: flex;
+    flex-direction: column;
+}
+
+
+.info__container {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+.card__list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card__img-wrapper {
+    position: relative;
+    width: 350px;
+    height: 200px;
+    cursor: pointer;
+    margin-bottom: 16px;
+}
+
+.card__hover {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.3);
+    display: none;
+    width: 100%;
+    height: 100%;
+    transition: display 0.4s ease;
+    color: var(--text-color--light);
+    font-size: 18px;
+    text-align: center;
+}
+
+.card__img {
+    width: 350px;
+    height: 200px;
+}
+
+.card__item:hover .card__hover {
+    display: block;
+}
+
+.card__item {
+    padding-bottom: 20px;
+    border: 1px solid red;
+    margin-bottom: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.card__title {
+    text-align: center;
+    margin: 0;
+    margin-bottom: 16px;
+}
+
+.card__link {
+    color: var(--text-color);
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card__link:hover {
+    text-decoration: underline;
+}
+
+.info__item {
+    display: flex;
+    flex-direction: column;
+}
+
+.info__item:not(:last-child) {
+    margin-bottom: 32px;
+}
+
+.info__link {
+    display: block;
+    color: var(--accent-color);
+    text-decoration: none;
+    font-size: 36px;
+    font-weight: 700;
+}
+
+.info__link:hover {
+    text-decoration: underline;
+}
+
+.info__time {
+    font-style: italic;
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+.info__defition {
+    margin: 0;
+}
+
+.site-footer__container {
+    display: flex;
+    justify-content: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
+}
+
+.site-footer__links {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+.site-footer__links-item:not(:last-child) {
+    margin-right: 32px;
+}
+
+.site-footer__link {
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--accent-color);
+}
+
+.site-footer__link:hover {
+    text-decoration: underline;
+}
+
+/* ERROR PAGE */
+.error-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48px;
 }
