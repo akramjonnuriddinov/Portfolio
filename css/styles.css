@@ -1,7 +1,7 @@
 :root {
     --text-color: #222;
     --bg-color: #fff;
-    --accent-color: #e05454;
+    --accent-color: #d23669;
     --text-color--light: rgb(216, 203, 203);
 }
 
@@ -113,6 +113,7 @@ img {
 .about-me__title {
     display: flex;
     flex-direction: column;
+    font-size: 24px;
 }
 
 
@@ -189,17 +190,12 @@ img {
     text-decoration: underline;
 }
 
-.info__item {
-    display: flex;
-    flex-direction: column;
-}
-
 .info__item:not(:last-child) {
     margin-bottom: 32px;
 }
 
 .info__link {
-    display: block;
+    display: inline-block;
     color: var(--accent-color);
     text-decoration: none;
     font-size: 36px;
@@ -212,7 +208,7 @@ img {
 
 .info__time {
     font-style: italic;
-    display: inline-block;
+    display: block;
     margin-bottom: 16px;
 }
 
