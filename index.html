@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Project</title>
+    <title>Akramjon - Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
     <!-- NORMALIZE -->
     <link rel="stylesheet" href="./css/normalize.css">
     <!-- STYLES -->
@@ -15,14 +18,20 @@
     <header class="site-header">
         <div class="site-header__container container">
             <div class="site-header__top">
-                <button class="dark-mode-btn js-dark-mode-btn">Qorong'u rejim</button>
+                <div class="toggle">
+                    <div class="toggle__month toggle__item js-toggle-item">
+                        <img class="toggle__img toggle__img--month toggle--none js-toggle-img-month" src="./img/month.png" alt="" width="16" height="16">
+                        <span class="toggle__show js-toggle-show"></span>
+                        <img class="toggle__img toggle__img--sunny js-toggle-img-sun" src="./img/sunny.png" alt="" width="16" height="16">
+                    </div>
+                </div>
             </div>
             <div class="about-me">
                 <div class="profile-img-wrapper">
                     <img src="img/profile.jpg" alt="Profile img" class="profile-img" width="60" height="60">
                 </div>
                 <h2 class="about-me__title">
-                    <span class="about-me__title--top">Akramjon Nuriddinovning portfolio sayti.</span>
+                    <span class="about-me__title--top">Akramjon Nuriddinovning portfolio sayti</span>
                     <span class="about-me__title-bottom">Frontend dasturchi. MayoqHub 2.0 o'quvchisi</span>
                 </h2>
             </div>
@@ -30,209 +39,98 @@
     </header>
 
     <main class="main-content">
-        <section class="portfolio">
-            <div class="container">
-                <h2 class="portfolio__title">Loyihalar Ro'yxati</h2>
-                <ul class="card">
-                    <li class="card__item">
-                        <a class="card__img-link" href="./img/PerfectPixel/Bookmark.jpg" target="_blank">
-                            <span class="card__img-link--hover">To'liq maket rasmi</span>
-                            <img class="card__img" src="./img/bookmark.png" alt="" width="300" height="200">
-                        </a>
-                        <div class="card__info">
-                            <h3 class="card__title">Bookmark</h3>
-                            <p class="card__defination">Bu yerda Siz Bookmark maketi bilan tanishib chiqishingiz mumkin</p>
-                            <a class="card__link" href="https://teletype.in/@nuriddinovakramjon/bookmark" target="_blank">Batafsil</a>
-                        </div>
-                    </li>
-                    <li class="card__item">
-                        <a class="card__img-link" href="./img/PerfectPixel/shortly.jpg" target="_blank">
-                            <span class="card__img-link--hover">To'liq maket rasmi</span>
-                            <img class="card__img" src="./img/Shortly.png" alt="" width="300" height="200">
-                        </a>
-                        <div class="card__info">
-                            <h3 class="card__title">Shortly</h3>
-                            <p class="card__defination">Bu yerda Siz Bookmark maketi bilan tanishib chiqishingiz mumkin</p>
-                            <a class="card__link" href="https://teletype.in/@nuriddinovakramjon/CUK-Q0i-2-6" target="_blank">Batafsil</a>
-                        </div>
-                    </li>
-                    <li class="card__item">
-                        <a class="card__img-link" href="./img/PerfectPixel/Timer.png" target="_blank">
-                            <span class="card__img-link--hover">To'liq maket rasmi</span>
-                            <img class="card__img" src="./img/timer.png" alt="" width="300" height="200">
-                        </a>
-                        <div class="card__info">
-                            <h3 class="card__title">Timer</h3>
-                            <p class="card__defination">Bu yerda Siz Bookmark maketi bilan tanishib chiqishingiz mumkin</p>
-                            <a class="card__link" href="https://teletype.in/@nuriddinovakramjon/7711dPFOIDg" target="_blank">Batafsil</a>
-                        </div>
-                    </li>
-                    <li class="card__item">
-                        <a class="card__img-link" href="./img/PerfectPixel/countries-Light.jpg" target="_blank">
-                            <span class="card__img-link--hover">To'liq maket rasmi</span>
-                            <img class="card__img" src="./img/countries.png" alt="" width="300" height="200">
-                        </a>
-                        <div class="card__info">
-                            <h3 class="card__title">Countries</h3>
-                            <p class="card__defination">Bu yerda Siz Bookmark maketi bilan tanishib chiqishingiz mumkin</p>
-                            <a class="card__link" href="https://teletype.in/@nuriddinovakramjon/7711dPFOIDg" target="_blank">Batafsil</a>
-                        </div>
-                    </li>
-                    <li class="card__item">
-                        <a class="card__img-link" href="./img/PerfectPixel/CoffeRoasters.jpg" target="_blank">
-                            <span class="card__img-link--hover">To'liq maket rasmi</span>
-                            <img class="card__img" src="./img/coffeRoasters.png" alt="" width="300" height="200">
-                        </a>
-                        <div class="card__info">
-                            <h3 class="card__title">CoffeRoasters</h3>
-                            <p class="card__defination">Bu yerda Siz Bookmark maketi bilan tanishib chiqishingiz mumkin</p>
-                            <a class="card__link" href="https://teletype.in/@nuriddinovakramjon/SCMc9cZIolm" target="_blank">Batafsil</a>
-                        </div>
-                    </li>
-                    <li class="card__item">
-                        <a class="card__img-link" href="./img/PerfectPixel/Bosh sahifa - Akademnashr promo sayt.jpg" target="_blank">
-                            <span class="card__img-link--hover">To'liq maket rasmi</span>
-                            <img class="card__img" src="./img/akademnashr.png" alt="" width="300" height="200">
-                        </a>
-                        <div class="card__info">
-                            <h3 class="card__title">Akademnashr</h3>
-                            <p class="card__defination">Bu yerda Siz Bookmark maketi bilan tanishib chiqishingiz mumkin</p>
-                            <a class="card__link" href="https://teletype.in/@nuriddinovakramjon/j4xfJPcOTKt" target="_blank">Batafsil</a>
-                        </div>
-                    </li>
-                    <li class="card__item">
-                        <a class="card__img-link" href="./img/PerfectPixel/Ansormed.jpg" target="_blank">
-                            <span class="card__img-link--hover">To'liq maket rasmi</span>
-                            <img class="card__img" src="./img/ansormed.png" alt="" width="300" height="200">
-                        </a>
-                        <div class="card__info">
-                            <h3 class="card__title">Ansormed</h3>
-                            <p class="card__defination">Bu yerda Siz Bookmark maketi bilan tanishib chiqishingiz mumkin</p>
-                            <a class="card__link" href="" target="_blank">Batafsil</a>
-                        </div>
-                    </li>
-                    <li class="card__item">
-                        <a class="card__img-link" href="./img/PerfectPixel/n-24-home.jpg" target="_blank">
-                            <span class="card__img-link--hover">To'liq maket rasmi</span>
-                            <img class="card__img" src="./img/n24.png" alt="" width="300" height="200">
-                        </a>
-                        <div class="card__info">
-                            <h3 class="card__title">Namanganliklar 24</h3>
-                            <p class="card__defination">Bu yerda Siz Bookmark maketi bilan tanishib chiqishingiz mumkin</p>
-                            <a class="card__link" href="" target="_blank">Batafsil</a>
-                        </div>
-                    </li>
-                    <li class="card__item">
-                        <a class="card__img-link" href="./img/PerfectPixel/Joblistings.jpg" target="_blank">
-                            <span class="card__img-link--hover">To'liq maket rasmi</span>
-                            <img class="card__img" src="./img/joblistings.png" alt="" width="300" height="200">
-                        </a>
-                        <div class="card__info">
-                            <h3 class="card__title">Joblistings</h3>
-                            <p class="card__defination">Bu yerda Siz Bookmark maketi bilan tanishib chiqishingiz mumkin</p>
-                            <a class="card__link" href="" target="_blank">Batafsil</a>
-                        </div>
-                    </li>
-                    <li class="card__item">
-                        <a class="card__img-link" href="./img/PerfectPixel/Pricing.jpg" target="_blank">
-                            <span class="card__img-link--hover">To'liq maket rasmi</span>
-                            <img class="card__img" src="./img/Pricing.png" alt="" width="300" height="200">
-                        </a>
-                        <div class="card__info">
-                            <h3 class="card__title">Pricing</h3>
-                            <p class="card__defination">Bu yerda Siz Bookmark maketi bilan tanishib chiqishingiz mumkin</p>
-                            <a class="card__link" href="" target="_blank">Batafsil</a>
-                        </div>
-                    </li>
-                    <li class="card__item">
-                        <a class="card__img-link" href="./img/PerfectPixel/AppleWatch.jpg" target="_blank">
-                            <span class="card__img-link--hover">To'liq maket rasmi</span>
-                            <img class="card__img" src="./img/apple-watch.png" alt="" width="300" height="200">
-                        </a>
-                        <div class="card__info">
-                            <h3 class="card__title">Apple Watch</h3>
-                            <p class="card__defination">Bu yerda Siz Bookmark maketi bilan tanishib chiqishingiz mumkin</p>
-                            <a class="card__link" href="" target="_blank">Batafsil</a>
-                        </div>
-                    </li>
-                    <li class="card__item">
-                        <a class="card__img-link" href="./img/PerfectPixel/articles.jpg" target="_blank">
-                            <span class="card__img-link--hover">To'liq maket rasmi</span>
-                            <img class="card__img" src="./img/articles.png" alt="" width="300" height="200">
-                        </a>
-                        <div class="card__info">
-                            <h3 class="card__title">Articles</h3>
-                            <p class="card__defination">Bu yerda Siz Bookmark maketi bilan tanishib chiqishingiz mumkin</p>
-                            <a class="card__link" href="" target="_blank">Batafsil</a>
-                        </div>
-                    </li>
-                    <li class="card__item">
-                        <a class="card__img-link" href="./img/PerfectPixel/Cryptex.jpg" target="_blank">
-                            <span class="card__img-link--hover">To'liq maket rasmi</span>
-                            <img class="card__img" src="./img/cryptex.png" alt="" width="300" height="200">
-                        </a>
-                        <div class="card__info">
-                            <h3 class="card__title">Cryptex</h3>
-                            <p class="card__defination">Bu yerda Siz Bookmark maketi bilan tanishib chiqishingiz mumkin</p>
-                            <a class="card__link" href="" target="_blank">Batafsil</a>
-                        </div>
-                    </li>
-                    <li class="card__item">
-                        <a class="card__img-link" href="./img/PerfectPixel/Loopstudios.jpg" target="_blank">
-                            <span class="card__img-link--hover">To'liq maket rasmi</span>
-                            <img class="card__img" src="./img/loopstudios.png" alt="" width="300" height="200">
-                        </a>
-                        <div class="card__info">
-                            <h3 class="card__title">LoopStudios</h3>
-                            <p class="card__defination">Bu yerda Siz Bookmark maketi bilan tanishib chiqishingiz mumkin</p>
-                            <a class="card__link" href="" target="_blank">Batafsil</a>
-                        </div>
-                    </li>
-                    <li class="card__item">
-                        <a class="card__img-link" href="./img/PerfectPixel/DigitalOcean.png" target="_blank">
-                            <span class="card__img-link--hover">To'liq maket rasmi</span>
-                            <img class="card__img" src="./img/digitalOcean.png" alt="" width="300" height="200">
-                        </a>
-                        <div class="card__info">
-                            <h3 class="card__title">DigitalOcean</h3>
-                            <p class="card__defination">Bu yerda Siz Bookmark maketi bilan tanishib chiqishingiz mumkin</p>
-                            <a class="card__link" href="" target="_blank">Batafsil</a>
-                        </div>
-                    </li>
-                    <li class="card__item">
-                        <a class="card__img-link" href="./img/PerfectPixel/skilled.jpg" target="_blank">
-                            <span class="card__img-link--hover">To'liq maket rasmi</span>
-                            <img class="card__img" src="./img/skilled.png" alt="" width="300" height="200">
-                        </a>
-                        <div class="card__info">
-                            <h3 class="card__title">Skilled</h3>
-                            <p class="card__defination">Bu yerda Siz Bookmark maketi bilan tanishib chiqishingiz mumkin</p>
-                            <a class="card__link" href="" target="_blank">Batafsil</a>
-                        </div>
-                    </li>
-                    <li class="card__item">
-                        <a class="card__img-link" href="./img/PerfectPixel/introForm.jpg" target="_blank">
-                            <span class="card__img-link--hover">To'liq maket rasmi</span>
-                            <img class="card__img" src="./img/intro-form.png" alt="" width="300" height="200">
-                        </a>
-                        <div class="card__info">
-                            <h3 class="card__title">Intro Form</h3>
-                            <p class="card__defination">Bu yerda Siz Bookmark maketi bilan tanishib chiqishingiz mumkin</p>
-                            <a class="card__link" href="" target="_blank">Batafsil</a>
-                        </div>
-                    </li>
-                    <li class="card__item">
-                        <a class="card__img-link" href="./img/PerfectPixel/CoffeStyle.jpg" target="_blank">
-                            <span class="card__img-link--hover">To'liq maket rasmi</span>
-                            <img class="card__img" src="./img/coffeStyle.png" alt="" width="300" height="200">
-                        </a>
-                        <div class="card__info">
-                            <h3 class="card__title">CoffeStyle</h3>
-                            <p class="card__defination">Bu yerda Siz Bookmark maketi bilan tanishib chiqishingiz mumkin</p>
-                            <a class="card__link" href="" target="_blank">Batafsil</a>
-                        </div>
-                    </li>
-                </ul>
+        <section class="info">
+            <div class="info__container container">
+                <div class="info__item">
+                    <a class="info__link js-info-link" href="https://teletype.in/@nuriddinovakramjon/bookmark" target="_blank">Bookmark</a>
+                    <span class="info__time">Boshlanish vaqti May 18, 2022, tugash vaqti Jun 2, 2022</span>
+                    <p class="info__defition">Bu yerda Siz <a class="info__link-img js-info-link-img" href="./img/PerfectPixel/Bookmark.jpg" target="_blank"></a> maketining to'liq rasmini ko'rishingiz mumkin</p>
+                </div>
+                <div class="info__item">
+                    <a class="info__link js-info-link" href="https://teletype.in/@nuriddinovakramjon/url-shortner" target="_blank">Shortly</a>
+                    <span class="info__time">Boshlanish vaqti May 18, 2022, tugash vaqti Jun 2, 2022</span>
+                    <p class="info__defition">Bu yerda Siz <a class="info__link-img js-info-link-img" href="./img/PerfectPixel/shortly.jpg" target="_blank"></a> maketining to'liq rasmini ko'rishingiz mumkin</p>
+                </div>
+                <div class="info__item">
+                    <a class="info__link js-info-link" href="https://teletype.in/@nuriddinovakramjon/Timer" target="_blank">Timer</a>
+                    <span class="info__time">Boshlanish vaqti May 29, 2022, tugash vaqti May 30, 2022</span>
+                    <p class="info__defition">Bu yerda Siz <a class="info__link-img js-info-link-img" href="./img/PerfectPixel/" target="_blank"></a> maketining to'liq rasmini ko'rishingiz mumkin</p>
+                </div>
+                <div class="info__item">
+                    <a class="info__link js-info-link" href="https://teletype.in/@nuriddinovakramjon/Countries" target="_blank">Countries</a>
+                    <span class="info__time">Boshlanish vaqti Apr 11, 2022, tugash vaqti Apr 14, 2022</span>
+                    <p class="info__defition">Bu yerda Siz <a class="info__link-img js-info-link-img" href="./img/PerfectPixel/" target="_blank"></a> maketining to'liq rasmini ko'rishingiz mumkin</p>
+                </div>
+                <div class="info__item">
+                    <a class="info__link js-info-link" href="https://teletype.in/@nuriddinovakramjon/CoffeRoasters" target="_blank">CoffeRoasters</a>
+                    <span class="info__time">Boshlanish vaqti May 18, 2022, tugash vaqti Jun 2, 2022</span>
+                    <p class="info__defition">Bu yerda Siz <a class="info__link-img js-info-link-img" href="./img/PerfectPixel/" target="_blank"></a> maketining to'liq rasmini ko'rishingiz mumkin</p>
+                </div>
+                <div class="info__item">
+                    <a class="info__link js-info-link" href="https://teletype.in/@nuriddinovakramjon/j4xfJPcOTKt" target="_blank">Akademnashr</a>
+                    <span class="info__time">Boshlanish vaqti May 18, 2022, tugash vaqti Jun 2, 2022</span>
+                    <p class="info__defition">Bu yerda Siz <a class="info__link-img js-info-link-img" href="./img/PerfectPixel/" target="_blank"></a> maketining to'liq rasmini ko'rishingiz mumkin</p>
+                </div>
+                <div class="info__item">
+                    <a class="info__link js-info-link" href="" target="_blank">Ansormed</a>
+                    <span class="info__time">Boshlanish vaqti May 18, 2022, tugash vaqti Jun 2, 2022</span>
+                    <p class="info__defition">Bu yerda Siz <a class="info__link-img js-info-link-img" href="./img/PerfectPixel/" target="_blank"></a> maketining to'liq rasmini ko'rishingiz mumkin</p>
+                </div>
+                <div class="info__item">
+                    <a class="info__link js-info-link" href="" target="_blank">Namanganliklar 24</a>
+                    <span class="info__time">Boshlanish vaqti May 18, 2022, tugash vaqti Jun 2, 2022</span>
+                    <p class="info__defition">Bu yerda Siz <a class="info__link-img js-info-link-img" href="./img/PerfectPixel/" target="_blank"></a> maketining to'liq rasmini ko'rishingiz mumkin</p>
+                </div>
+                <div class="info__item">
+                    <a class="info__link js-info-link" href="" target="_blank">Joblistings</a>
+                    <span class="info__time">Boshlanish vaqti May 18, 2022, tugash vaqti Jun 2, 2022</span>
+                    <p class="info__defition">Bu yerda Siz <a class="info__link-img js-info-link-img" href="./img/PerfectPixel/" target="_blank"></a> maketining to'liq rasmini ko'rishingiz mumkin</p>
+                </div>
+                <div class="info__item">
+                    <a class="info__link js-info-link" href="" target="_blank">Pricing</a>
+                    <span class="info__time">Boshlanish vaqti May 18, 2022, tugash vaqti Jun 2, 2022</span>
+                    <p class="info__defition">Bu yerda Siz <a class="info__link-img js-info-link-img" href="./img/PerfectPixel/" target="_blank"></a> maketining to'liq rasmini ko'rishingiz mumkin</p>
+                </div>
+                <div class="info__item">
+                    <a class="info__link js-info-link" href="" target="_blank">Apple Watch</a>
+                    <span class="info__time">Boshlanish vaqti May 18, 2022, tugash vaqti Jun 2, 2022</span>
+                    <p class="info__defition">Bu yerda Siz <a class="info__link-img js-info-link-img" href="./img/PerfectPixel/" target="_blank"></a> maketining to'liq rasmini ko'rishingiz mumkin</p>
+                </div>
+                <div class="info__item">
+                    <a class="info__link js-info-link" href="" target="_blank">Articles</a>
+                    <span class="info__time">Boshlanish vaqti May 18, 2022, tugash vaqti Jun 2, 2022</span>
+                    <p class="info__defition">Bu yerda Siz <a class="info__link-img js-info-link-img" href="./img/PerfectPixel/" target="_blank"></a> maketining to'liq rasmini ko'rishingiz mumkin</p>
+                </div>
+                <div class="info__item">
+                    <a class="info__link js-info-link" href="" target="_blank">Cryptex</a>
+                    <span class="info__time">Boshlanish vaqti May 18, 2022, tugash vaqti Jun 2, 2022</span>
+                    <p class="info__defition">Bu yerda Siz <a class="info__link-img js-info-link-img" href="./img/PerfectPixel/" target="_blank"></a> maketining to'liq rasmini ko'rishingiz mumkin</p>
+                </div>
+                <div class="info__item">
+                    <a class="info__link js-info-link" href="" target="_blank">Skilled</a>
+                    <span class="info__time">Boshlanish vaqti May 18, 2022, tugash vaqti Jun 2, 2022</span>
+                    <p class="info__defition">Bu yerda Siz <a class="info__link-img js-info-link-img" href="./img/PerfectPixel/" target="_blank"></a> maketining to'liq rasmini ko'rishingiz mumkin</p>
+                </div>
+                <div class="info__item">
+                    <a class="info__link js-info-link" href="" target="_blank">LoopStudios</a>
+                    <span class="info__time">Boshlanish vaqti May 18, 2022, tugash vaqti Jun 2, 2022</span>
+                    <p class="info__defition">Bu yerda Siz <a class="info__link-img js-info-link-img" href="./img/PerfectPixel/" target="_blank"></a> maketining to'liq rasmini ko'rishingiz mumkin</p>
+                </div>
+                <div class="info__item">
+                    <a class="info__link js-info-link" href="" target="_blank">Intro Form</a>
+                    <span class="info__time">Boshlanish vaqti May 18, 2022, tugash vaqti Jun 2, 2022</span>
+                    <p class="info__defition">Bu yerda Siz <a class="info__link-img js-info-link-img" href="./img/PerfectPixel/" target="_blank"></a> maketining to'liq rasmini ko'rishingiz mumkin</p>
+                </div>
+                <div class="info__item">
+                    <a class="info__link js-info-link" href="" target="_blank">DigitalOcean</a>
+                    <span class="info__time">Boshlanish vaqti May 18, 2022, tugash vaqti Jun 2, 2022</span>
+                    <p class="info__defition">Bu yerda Siz <a class="info__link-img js-info-link-img" href="./img/PerfectPixel/" target="_blank"></a> maketining to'liq rasmini ko'rishingiz mumkin</p>
+                </div>
+                <div class="info__item">
+                    <a class="info__link js-info-link" href="" target="_blank">CoffeStyle</a>
+                    <span class="info__time">Boshlanish vaqti May 18, 2022, tugash vaqti Jun 2, 2022</span>
+                    <p class="info__defition">Bu yerda Siz <a class="info__link-img js-info-link-img" href="./img/PerfectPixel/" target="_blank"></a> maketining to'liq rasmini ko'rishingiz mumkin</p>
+                </div>
             </div>
         </section>
     </main>
@@ -255,7 +153,7 @@
             </ul>
         </div>
     </footer>
-
+    
     <script src="js/main.js"></script>
 </body>
 </html>
