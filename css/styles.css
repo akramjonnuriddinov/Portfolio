@@ -182,10 +182,6 @@ img {
     font-family: var(--font-title);
 }
 
-/* .info__link:hover {
-    text-decoration: underline;
-} */
-
 .info__time {
     display: block;
     margin-bottom: 16px;
@@ -237,12 +233,4 @@ img {
 
 .site-footer__link:hover {
     text-decoration: underline;
-}
-
-/* ERROR PAGE */
-.error-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 48px;
 }
