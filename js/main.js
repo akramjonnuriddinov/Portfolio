@@ -24,3 +24,16 @@ elsInfoLink.forEach(function(item, index) {
     elsInfoLinkImg[index].href = `./img/PerfectPixel/${elsInfoLink[index].textContent}.jpg`;
     elsInfoLink[index].href = `https://teletype.in/@nuriddinovakramjon/${elsInfoLink[index].textContent}`;
 });
+
+
+// MODAL
+const elModalBtn = document.querySelector('.js-modal-btn');
+const elModal = document.querySelector('.js-modal');
+
+elModalBtn.addEventListener('click', function () {
+    elModal.classList.remove('modal--open');
+});
+
+setTimeout(function() {
+    elModal.classList.add('modal--open');
+}, 2000);
