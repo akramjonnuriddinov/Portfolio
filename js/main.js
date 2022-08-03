@@ -22,7 +22,7 @@ const elsInfoLinkImg = document.querySelectorAll('.info__link-img');
 elsInfoLink.forEach(function(item, index) {
     elsInfoLinkImg[index].textContent = elsInfoLink[index].textContent;
     elsInfoLinkImg[index].href = `./img/PerfectPixel/${elsInfoLink[index].textContent}.jpg`;
-    elsInfoLink[index].href = `https://teletype.in/@nuriddinovakramjon/${elsInfoLink[index].textContent}`;
+    // elsInfoLink[index].href = `https://teletype.in/@nuriddinovakramjon/${elsInfoLink[index].textContent}`;
 });
 
 
@@ -37,3 +37,7 @@ elModalBtn.addEventListener('click', function () {
 setTimeout(function() {
     elModal.classList.add('modal--open');
 }, 2000);
+
+setTimeout(function() {
+    elModal.classList.remove('modal--open');
+}, 6000);
